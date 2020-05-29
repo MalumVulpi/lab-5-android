@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hotelImageView"
+            android:layout_width="105dp"
+            android:layout_height="76dp"
+            android:padding="4dp"
+            android:layout_alignParentLeft="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/hotelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hotelImageView"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Hotel">
+        </TextView>
+
+        <TextView
+            android:id="@+id/streetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotelTextView"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="9dp"
+            android:text="Улица "
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
